@@ -13,8 +13,18 @@ app.get('/', function(request, response) {
   response.render('pages/index');
 });
 
+app.get('/crypto_game', function(request, response) {
+  response.render('pages/crypto_game');
+});
+
+app.get('/hashing', function(request, response) {
+  response.render('pages/hashing');
+});
+
+app.get('/factoring', function(request, response){
+  response.render('pages/factoring');
+});
+
 app.listen(app.get('port'), function() {
   console.log('Node app is running on port', app.get('port'));
 });
-
-
